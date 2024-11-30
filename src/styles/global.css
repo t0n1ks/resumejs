@@ -1,0 +1,48 @@
+/* styles/global.css */
+
+/* Общие стили для всего проекта */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Сбросим отступы и паддинги по умолчанию */
+}
+
+/* Шрифты и базовые настройки */
+body {
+    font-family: 'Arial', sans-serif; /* Шрифт для всего проекта */
+    background-color: #f0f0f0; /* Светлый фон */
+    color: #333; /* Основной цвет текста */
+    line-height: 1.6; /* Межстрочный интервал для улучшения читаемости */
+}
+
+/* Стили для ссылок */
+a {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: inherit; /* Ссылка наследует цвет родителя */
+}
+
+a:hover {
+    color: #007bff; /* Цвет ссылки при наведении */
+}
+
+/* Заголовки */
+h1, h2 {
+    font-family: 'Arial', sans-serif; /* Можно выбрать шрифт для заголовков */
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Стили для инпутов */
+input[type="text"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff; /* Цвет границы при фокусе */
+}

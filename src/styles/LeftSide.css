@@ -1,0 +1,75 @@
+/* styles/LeftSide.css */
+
+/* Левый блок */
+.left-side {
+    background-color: rgba(39, 39, 240, 0.774); /* Темно-синий с легкой прозрачностью */
+    color: #fff; /* Белый цвет текста для контраста */
+    padding: 30px;
+    width: 100%; /* Полная ширина контейнера */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем все элементы по горизонтали */
+    justify-content: center; /* Центрируем по вертикали */
+    height: auto; /* Высота автоматически под контент */
+    text-align: center; /* Центрируем текст */
+}
+
+.left-side h1 {
+    margin-bottom: 10px; /* Немного отступа между именем и должностью */
+    color: #090909;
+}
+
+.left-side p.job-title {
+    font-size: 1.2rem;
+    margin-bottom: 30px; /* Отступ перед контактами */
+}
+
+.left-side .contact,
+.left-side .personal-info,
+.left-side .date-info {
+    margin-bottom: 40px; /* Отступы между разделами */
+}
+
+.left-side h2 {
+    font-size: 1.5rem;
+    color: #090909;
+    margin-bottom: 10px;
+}
+
+.left-side p {
+    color: #292828;
+    font-size: 1rem;
+    margin-bottom: 10px; /* Отступы между параграфами */
+}
+
+/* Для ссылок, чтобы они выглядели как текст */
+.contact a,
+.personal-info a {
+    color: inherit; /* Наследуем цвет родительского элемента */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.contact p,
+.personal-info p {
+    font-size: 16px;
+    margin: 10px 0; /* Отступы между параграфами */
+}
+
+/* стили для left-side */
+
+/* Стили для контейнера фотографии */
+.profile-photo {
+    width: 200px;  /* Ширина контейнера */
+    height: 200px; /* Высота контейнера */
+    border-radius: 50%; /* Скругление, чтобы фото стало круглым */
+    overflow: hidden;  /* Обеспечиваем, что изображение не выйдет за пределы круга */
+    margin: 0 auto;  /* Центрируем изображение по горизонтали */
+  }
+  
+  /* Стили для изображения внутри контейнера */
+  .profile-photo img {
+    width: 100%;  /* Заставляем изображение растягиваться по ширине контейнера */
+    height: 100%; /* Заставляем изображение растягиваться по высоте контейнера */
+    object-fit: cover; /* Обеспечиваем, чтобы изображение заполнило контейнер и при этом не искажалось */
+  }
+  

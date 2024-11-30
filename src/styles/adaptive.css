@@ -1,0 +1,73 @@
+/* Контейнер для карточки */
+.container {
+    display: flex;
+    justify-content: space-between; /* Стыкуем колонки */
+    align-items: flex-start; /* Выравнивание по верху */
+    gap: 0; /* Убираем большие отступы между колонками */
+    padding: 20px;
+    max-width: 1200px; /* Максимальная ширина контейнера для более компактного вида */
+    margin: 0 auto; /* Центрируем карточку по горизонтали */
+}
+
+/* Левая часть */
+.left-column {
+    flex: 0 0 45%; /* Левая часть теперь чуть уже */
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрируем контент внутри левого блока */
+    align-items: center; /* Центрируем по горизонтали */
+    background-color: rgba(239, 238, 238, 0.8); /* Цвет фона для левой части */
+    padding: 20px; /* Отступы от краёв контейнера */
+    text-align: center; /* Выравнивание текста по центру */
+    color: white; /* Цвет текста */
+    word-wrap: break-word; /* Перенос слов для адаптивности */
+}
+
+/* Правая часть */
+.right-column {
+    flex: 0 0 50%; /* Правая часть будет занимать 50% ширины */
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрируем контент внутри правого блока */
+    align-items: flex-start; /* Выравнивание контента слева */
+    padding: 20px; /* Отступы от краёв контейнера */
+    background-color: rgba(240, 240, 240, 0.8); /* Светло-серый фон с прозрачностью */
+    border-radius: 10px; /* Закругление углов */
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Переводим элементы в вертикальное положение */
+        align-items: center; /* Центрируем весь контент по горизонтали */
+    }
+
+    /* Уменьшаем максимальную ширину колонок */
+    .left-column, .right-column {
+        max-width: 100%; /* 100% ширины для каждой колонки */
+        margin-bottom: 20px; /* Отступ снизу для лучшего расположения */
+    }
+
+    /* Для улучшения визуализации на мобильных устройствах */
+    .right-column {
+        align-items: center; /* Выравнивание контента по центру на мобильных устройствах */
+    }
+
+    /* Адаптивные стили */
+@media (max-width: 768px) {
+    .profile-photo {
+      width: 120px;  /* Уменьшаем размер изображения на мобильных устройствах */
+      height: 120px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile-photo {
+      width: 100px;  /* Еще меньше размер на очень маленьких экранах */
+      height: 100px;
+    }
+  }
+  
+}

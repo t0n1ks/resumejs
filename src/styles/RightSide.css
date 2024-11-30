@@ -1,0 +1,56 @@
+/* styles/RightSide.css */
+
+/* Правый блок */
+.right-side {
+    padding: 20px;
+    width: 100%; /* Полная ширина контейнера */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgba(240, 240, 240, 0.8); /* Светло-серый фон с прозрачностью */
+    border-radius: 10px; /* Закругление углов */
+}
+
+/* Стили для каждого раздела в правой части */
+.right-side h2 {
+    display: flex;
+    align-items: center; /* Для выравнивания иконки и текста */
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.right-side h2::before {
+    content: "☆"; /* Заменим на звездочку */
+    font-size: 1.5rem;
+    color: #ffcc00; /* Золотой цвет для звездочек */
+    margin-right: 10px; /* Отступ между звездочкой и заголовком */
+}
+
+.right-side p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    text-align: center; /* Выравниваем текст под заголовком по центру */
+    margin-bottom: 15px;
+}
+
+/* Стиль для каждого блока в правой части */
+.professional-experience, .education, .additional-skills, .hobbies {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Разделы должны быть с отступами слева */
+.right-side .professional-experience,
+.right-side .education,
+.right-side .additional-skills,
+.right-side .hobbies {
+    padding-left: 20px; /* Отступ от левого края */
+}
+
+.right-side h2 {
+    margin-left: 20px; /* Немного отступаем от левого края */
+}
