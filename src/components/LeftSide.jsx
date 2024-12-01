@@ -6,7 +6,7 @@ const LeftSide = () => {
   return (
     <div className="left-side">
       <div className="profile-photo">
-      <img src="/resumejs/assets/images/avatar.jpg" alt="Profile" />
+      <img src="/assets/images/avatar.jpg" alt="Profile" />
       </div>
       <div className="profile-info">
         <h1>Nikita Titov</h1>
